@@ -1,3 +1,2 @@
 # java
-Ejemplos de JAVA
-Video 47
+Ejemplos de JAVA del curso pildorasinformaticas
