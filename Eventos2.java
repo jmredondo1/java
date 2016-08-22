@@ -1,4 +1,4 @@
-// VersiÛn 2 de EVENTOS1. Crea una clase para tratar el COLOR
+// Versi√≥n 2 de EVENTOS1. Crea una clase para tratar el COLOR
 package eventos1;
 
 import java.awt.Color;
@@ -44,8 +44,8 @@ class Panel extends JPanel {
         ColorFondo azul = new ColorFondo(Color.BLUE);
         ColorFondo rojo = new ColorFondo(Color.RED);
         
-        // AÒade un "listener" cada objeto que puede emitir un evento (addActionListener).
-        // El evento es de tipo ACTION (ActionListener), hay optros de tipo ventana (maxim, minim...)
+        // A√±ade un "listener" cada objeto que puede emitir un evento (addActionListener).
+        // El evento es de tipo ACTION -rat√≥n- (ActionListener), hay otros de tipo ventana (maxim, minim...)
         buttonBlue.addActionListener(azul);
         buttonYellow.addActionListener(amarillo);
         buttonRed.addActionListener(rojo);
@@ -64,9 +64,9 @@ class Panel extends JPanel {
 //        }
 //    }
 
-    // Creo una clase interna para que pueda acceder al mÈtodo setBackground() que pertenece a JFrame
-    // Adem·s la encapsulo (private) para impedir su acceso
-    // Esta clase es la oyente e implementa el ActionListener con el mÈtodo actionPerformed(ActionEvent e) 
+    // Creo una clase interna para que pueda acceder al m√©todo setBackground() que pertenece a JFrame
+    // Adem√°s la encapsulo (private) para impedir su acceso
+    // Esta clase es la oyente e implementa el ActionListener con el m√©todo actionPerformed(ActionEvent e) 
     private class ColorFondo implements ActionListener {
 
         private final Color colorDeFondo;
@@ -75,11 +75,11 @@ class Panel extends JPanel {
             colorDeFondo = c;
         }
 
-        // ImplementaciÛn del mÈtodo abstracto actionPerformed
+        // Implementaci√≥n del m√©todo abstracto actionPerformed
         @Override
         public void actionPerformed(ActionEvent e) {
-            // Puedo llamar a este mÈtodo que es de JFrame porque es una clase interna, 
-            // si hubiese estado en el exterior, no podrÌa haberlo llamado
+            // Puedo llamar a este m√©todo que es de JFrame porque es una clase interna, 
+            // si hubiese estado en el exterior, no podr√≠a haberlo llamado
             setBackground(colorDeFondo);
         }
 
