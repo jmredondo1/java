@@ -51,17 +51,18 @@ class Panel extends JPanel {
         buttonRed.addActionListener(rojo);
     }
 
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == buttonBlue) {
-            this.setBackground(Color.BLUE);
-        }
-        if (e.getSource() == buttonYellow) {
-            this.setBackground(Color.YELLOW);
-        }
-        if (e.getSource() == buttonRed) {
-            this.setBackground(Color.RED);
-        }
-    }
+//	El ActionPerformed se implementa en la clase COLOR
+//    public void actionPerformed(ActionEvent e) {
+//        if (e.getSource() == buttonBlue) {
+//            this.setBackground(Color.BLUE);
+//        }
+//        if (e.getSource() == buttonYellow) {
+//            this.setBackground(Color.YELLOW);
+//        }
+//        if (e.getSource() == buttonRed) {
+//            this.setBackground(Color.RED);
+//        }
+//    }
 
     // Creo una clase interna para que pueda acceder al método setBackground() que pertenece a JFrame
     // Además la encapsulo (private) para impedir su acceso
