@@ -1,4 +1,4 @@
-// EVENTOS DE FOCO OCN CUADROS DE TEXTO
+// EVENTOS DE FOCO CON CUADROS DE TEXTO
 package eventosfoco;
 
 import java.awt.Graphics;
