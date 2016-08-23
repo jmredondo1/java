@@ -52,6 +52,7 @@ class Panel extends JPanel {
         //cuadro2.addFocusListener(f);
     }
 
+    // la hago como clase interna para poder acceder a cuadro1 y a cuadro2
     private class Foco implements FocusListener {
 
         @Override
