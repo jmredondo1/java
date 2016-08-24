@@ -21,7 +21,7 @@ class Frame extends JFrame {
     public Frame() {
         setTitle("Layout1");
         setBounds(100, 100, 500, 300);
-        FlowLayout fl = new FlowLayout(FlowLayout.LEFT);
+    //    FlowLayout fl = new FlowLayout(FlowLayout.LEFT);
         Panel p = new Panel();
         p.setLayout(new FlowLayout(FlowLayout.LEFT));
         add(p);
