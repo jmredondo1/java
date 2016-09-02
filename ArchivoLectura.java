@@ -36,7 +36,7 @@ class Lectura {
         } catch (FileNotFoundException ex) {
             System.out.println("Archivo no encontrado: " + ex.getMessage());
         } finally {
-            reader.close(); // Se puede poner al final del bucle o aquí, en finally. sería el caso deun fichero largo con TimeOut
+            reader.close(); // Se puede poner al final del bucle o aquÃ­, en finally. serÃ­a el caso deun fichero largo con TimeOut
         }
     }
 }
