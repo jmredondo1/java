@@ -1,4 +1,4 @@
-// recorrido recursivo de directorios
+// recorrido recursivo de directorios (solo 2 niveles)
 package ficherosdirectorios;
 
 import com.sun.org.apache.xml.internal.serializer.utils.SystemIDResolver;
@@ -8,7 +8,7 @@ public class FicherosDirectorios {
 
     public static void main(String[] args) {
 
-        File f = new File("C:\\Users\\José María\\Desktop");
+        File f = new File("C:\\Users\\JosÃ© MarÃ­a\\Desktop");
 
         System.out.println(f.getAbsolutePath());
         System.out.println(f.exists());
