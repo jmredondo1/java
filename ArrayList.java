@@ -7,12 +7,12 @@ public class ArrayListEjemplo1 {
 
     public static void main(String[] args) {
 
-// El problema es que hay que saber de antemano el n鷐ero de elementos. La soluci髇 es un ArrayList
+// El problema es que hay que saber de antemano el n煤mero de elementos. La soluci贸n es un ArrayList
 /*
         Empleado[] empleados = new Empleado[3];
         empleados[0] = new Empleado("Ana", 45, 2500);
         empleados[1] = new Empleado("Antonio", 50, 3000);
-        empleados[2] = new Empleado("Mar韆", 55, 3500);
+        empleados[2] = new Empleado("Mar铆a", 55, 3500);
          */
         ArrayList<Empleado> empleados = new ArrayList<Empleado>();
         empleados.add(new Empleado("Nombre 0", 45, 2500));
@@ -20,16 +20,15 @@ public class ArrayListEjemplo1 {
         empleados.add(new Empleado("Nombre 2", 51, 2000));
         empleados.add(new Empleado("Nombre 3", 55, 3500));
 
-        // Posicionamiento en posici髇 1
-        //empleados.add(new Empleado("Mar韆", 55, 3500));
-        empleados.set(1, new Empleado("Nombre 1-NUEVO", 52, 1000)); // Sustituye al que estaba en esa posici髇
+        // Posicionamiento en posici贸n 1
+        empleados.set(1, new Empleado("Nombre 1-NUEVO", 52, 1000)); // Sustituye al que estaba en esa posici贸n
 
-        System.out.println("N鷐ero de elementos: " + empleados.size());
+        System.out.println("N煤mero de elementos: " + empleados.size());
         for (Empleado empleado : empleados) {
             System.out.println(empleado.toString());
         }
 
-        // Imprimir un elemento de una posici髇
+        // Imprimir un elemento de una posici贸n
         System.out.println("El elemento en 3 lugar: " + empleados.get(2).toString());
 
         // Iteraciones
