@@ -4,17 +4,17 @@ public class ClasesGenericas {
 
     public static void main(String[] args) {
 
-        // Uso la clase egenÈrica para un String
+        // Uso la clase egen√©rica para un String
         Generica<String> s = new Generica<String>();
-        s.setValor("Hola mundo genÈrico");
+        s.setValor("Hola mundo gen√©rico");
         System.out.println(s.getValor());
 
-        // Uso la clase egenÈrica para un Integer
+        // Uso la clase egen√©rica para un Integer
         Generica<Integer> i = new Generica<Integer>();
         i.setValor(123);
         System.out.println(i.getValor());
 
-        // Uso la clase egenÈrica para un Objeto
+        // Uso la clase egen√©rica para un Objeto
         Persona persona = new Persona("Pepe");
         Generica<Persona> p = new Generica<Persona>();
         p.setValor(persona);
@@ -39,23 +39,23 @@ class Persona {
 
 }
 
-// Esta es una clase genÈrica. Puede instanciarse con distintos tipos de objetos
+// Esta es una clase gen√©rica. Puede instanciarse con distintos tipos de objetos
 class Generica<T> {
 
     private T valor;
 
     /**
-     * <b>Clase genÈrica:</b>
-     * Devuelve un valor genÈrico
-     * @return valor genÈrico
+     * <b>Clase gen√©rica:</b>
+     * Devuelve un valor gen√©rico
+     * @return valor gen√©rico
      */
     public T getValor() {
         return valor;
     }
 
     /**
-     * <b>Clase genÈrica:</b>
-     * Asigna un nuevo valor al par·metro. 
+     * <b>Clase gen√©rica:</b>
+     * Asigna un nuevo valor al par√°metro. 
      * @param valor 
      */
     public void setValor(T valor) {
