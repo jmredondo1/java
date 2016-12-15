@@ -6,7 +6,7 @@ public class BaseDatos {
 
     /**
      *
-     * IMPORTANTE: Añadir el driver de DERBY a las librerías del proyecto
+     * IMPORTANTE: AÃ±adir el driver de DERBY a las librerÃ­as del proyecto
      * C:\Program Files\Java\jdk1.7.0_21\db\lib\derbyclient.jar
      *
      */
